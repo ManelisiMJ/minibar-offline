@@ -1,0 +1,232 @@
+* {
+	-color : #0c7489;
+	-white : #ebebeb;
+	-gray : #c0c0c0;
+	-darkGray : derive(-gray,-20%);
+	-black : #040404;
+	-abort : #e74c3c;
+}
+
+.root{
+	-fx-background-color : white;
+	-fx-fill-width : true;
+	-fx-fill-height : true;
+	-fx-font-family: 'SansSerif';
+	-fx-pref-width: 100%;
+}
+
+/* #mainContainer{
+	-fx-pref-width: 100%;
+}
+
+#mainScrollPane{
+	-fx-pref-width: 100%;
+} */
+
+.sentencePanel{
+	-fx-background-color : -white;
+	-fx-padding: 30px 30px 30px 30px;
+	-fx-background-radius: 20px;
+	-fx-border-insets: 10px;
+    -fx-background-insets: 10px;
+}
+
+/*
+ * **********
+ * LABELS and TEXTFIELDS
+ * **********
+*/
+.label{
+	 -fx-text-fill : -black;
+ }
+
+ .translationLabel{
+    -fx-font-family: 'SansSerif';
+    -fx-font-size: 14px;
+    -fx-border-insets: 2px;
+    -fx-background-insets: 2px;
+ }
+
+ .text-field{
+	-fx-border-insets: 2px;
+    -fx-background-insets: 2px;
+	-fx-border-radius: 2px;
+	-fx-font-family: 'SansSerif';
+	-fx-font-size: 17px;
+ }
+
+
+/*
+ * **********
+ * COMBOBOX
+ * **********
+ * 
+ */
+.combo-box {
+	-fx-background-color : -gray;
+}
+
+.check-box>*.box{
+	-fx-background-color : -color;
+}
+
+/*
+ * **********
+ * MENU
+ * **********
+ * 
+ */
+.menu-bar{
+	-fx-background-color : #A2B2EE;
+}
+ 
+/*
+ * **********
+ * Table
+ * **********
+ * 
+ */
+.table-view:row-selection{
+	-fx-background-color : -gray;
+}
+
+.table-view:row-selection>*.column-header-background{
+	-fx-background-color : -white;
+}
+
+.table-view>*.column-resize-line{
+	-fx-background-color : -black;
+}
+
+.table-view>*.column-header-background>*.nested-column-header>*.table-column{
+	-fx-background-color : -darkGray, -white;
+}
+
+.table-view>*.column-header-background>*.filler{
+	-fx-background-color : -darkGray, -gray;
+}
+
+.table-view>*.column-header-background>*.show-hide-columns-button{
+	-fx-background-color : -gray;
+}
+
+
+.tree-table-view:row-selection{
+	-fx-background-color : -gray;
+}
+
+.tree-table-view:row-selection>*.column-header-background{
+	-fx-background-color : -white;
+}
+
+.tree-table-view>*.column-resize-line{
+	-fx-background-color : -black;
+}
+
+.tree-table-view>*.column-header-background>*.nested-column-header>*.table-column{
+	-fx-background-color : -darkGray, -white;
+}
+
+.tree-table-view>*.column-header-background>*.filler{
+	-fx-background-color : -darkGray, -gray;
+}
+
+.tree-table-view>*.column-header-background>*.show-hide-columns-button{
+	-fx-background-color : -gray;
+}
+
+/*
+ * **********
+ * Scroll pane
+ * **********
+ * 
+ */
+ .suggestWordVBox {
+    -fx-background-color: #ffffff; 
+    -fx-border-width: 1px;
+    -fx-border-insets: 2px;
+    -fx-background-insets: 2px;
+    -fx-border-radius: 2px;
+    -fx-padding: 10px 10px;
+}
+
+.scroll-pane>*.scroll-bar{
+	-fx-background-color : #efe9f4;
+}
+
+.scroll-pane>*.scroll-bar>*.thumb{
+	-fx-background-color : -gray;
+}
+
+#mainScrollPane>*.scroll-bar>*.thumb{
+    -fx-background-color : #A2B2EE;
+}
+
+/*
+ * **********
+ * BUTTONS
+ * **********
+ * 
+ */
+ .translateBtn{
+	-fx-background-color:#ffffff;
+	-fx-text-fill : -black;
+	-fx-padding: 10px 10px; 
+	-fx-border-width: 1px;
+	-fx-border-radius: 7px;
+	-fx-border-color: -black;
+	-fx-pref-width: 100%;
+	-fx-border-insets: 2px;
+    -fx-background-insets: 2px;
+	-fx-font-family: 'SansSerif';
+	-fx-font-size: 17px;
+}
+
+.translateBtn:pressed{
+	-fx-border-width: none;
+	-fx-border-color: -white;
+}
+
+.button:hover {
+	-fx-cursor: hand;
+}
+
+.menu-button{
+	-fx-background-color : #A2B2EE;
+}
+
+.delete-button{
+    -fx-border-radius: 3px;
+    -fx-background-color : red;
+    -fx-text-fill : -white;
+    -fx-border-insets: 2px;
+    -fx-background-insets: 2px;
+    -fx-font-family: 'SansSerif';
+    -fx-font-size: 16px;
+}
+
+.expand-button{
+    -fx-border-radius: 3px;
+    -fx-border-insets: 2px;
+    -fx-background-insets: 2px;
+    -fx-font-family: 'SansSerif';
+    -fx-font-size: 12px;
+}
+
+.delete-button:pressed{
+    -fx-text-fill : -black;
+}
+
+.graph-btn {
+    -fx-background-image: url('graph.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-min-width: 0px;
+    -fx-min-height: 0px;
+}
+
+.prediction-buttons{
+    -fx-background-color: #1b3b6f;
+    -fx-text-fill: -white;
+}
